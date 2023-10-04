@@ -50,7 +50,7 @@ master.title("AVIONICA")
   
 # sets the geometry of main
 # root window
-master.geometry("240x240")
+master.geometry("340x340")
 label_top = tk.Label(master, text="AVIONICA")
 label_top.pack(side="top", pady=10)
 
