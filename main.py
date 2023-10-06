@@ -7,8 +7,9 @@ import tkinter as tk
 import numpy as np
 from PIL import Image, ImageTk
 import subprocess
+import os
 
-
+current_path = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 def IMU(): # function to open a new window for IMU graph
      
     # Toplevel object which will
@@ -36,7 +37,7 @@ def IMU(): # function to open a new window for IMU graph
  
     # A Label widget to show in toplevel
     tk.Label(newWindow, text ="IMU").pack()
- 
+
 def GPS(): # function to open a new window for GPS data    
     try:
         script_path = 'gpsintkinker.py'
@@ -66,8 +67,8 @@ btn_gps.pack(pady = 10)
 #Image in the bottom right corner
 label = tk.Label(master)
 label.pack(pady = 10 , side=tkinter.BOTTOM)
-image = Image.open("logo.png") # Load your image
-image = image.resize((50, 50))
+image = Image.open(os.path.join(current_path, "images", "logo.png")) # Load your image
+image = image.resize((70, 70))
 image=ImageTk.PhotoImage(image)
 image_label = tk.Label(label, image=image) # Create a Label widget with the resized image
 image_label.photo = image # Keep a reference to the PhotoImage to prevent it from being garbage collected
