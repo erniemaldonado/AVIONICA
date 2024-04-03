@@ -1,1 +1,2 @@
 # AVIONICA
+This proyect is for the interface of a Rocket, it tells the user in real time the status of its IMU, its position (lat,lon,alt), pressure, and status of cone. It also helps the user to easily save data in a csv file. 

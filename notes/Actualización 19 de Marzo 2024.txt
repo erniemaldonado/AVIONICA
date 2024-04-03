@@ -1,0 +1,4 @@
+Actualización 19 de Marzo 2024
+- Se cambio la forma de recibir la info, para ser compatible con como la envia el esp
+	- El orden en el que se declaran las variables en el diccionario tiene que ser el mismo que	  envia el ESP
+	- Se tradujeron los comentarios a español, y se cambiaron ciertas cosas para hacerlo mas comprensible
